@@ -40,3 +40,23 @@ vowels.onclick = function () {
         document.getElementById("result").innerHTML = number
     }
 }
+
+/**
+ *Bài 2: 
+-	Input: Cho 1 object
+-	Output: Viết hàm kiểm tra xem object đó rỗng không
+
+ */
+
+const a = ["ab"];
+
+// function isEmpty(obj) {
+//     for(var key in obj) {
+//         if(obj.hasOwnProperty(key))
+//             console.log('false');
+//     }
+//     console.log('true');
+// }
+//output: 
+// console.log(isEmpty(a))
+console.log(Object.getOwnPropertyNames(a).length === 0); // true;
